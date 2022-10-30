@@ -32,14 +32,14 @@ public class Coche extends Thread {
                     }
                     continue;
                 }
-                System.out.printf("El coche "+ id+" está repostando.");
+                System.out.println("El coche "+ id+" está repostando.");
                 try {
                     sleep(Tiempo);
                 } catch (InterruptedException ex) {
                     System.out.println("Error: " + ex.getMessage());
                 }
                 finalizado = true;
-                System.out.printf("El coche "+ id+" ha terminado de repostar.");
+                System.out.println("El coche "+ id+" ha terminado de repostar.");
                 surtidor.saleCoche(id);
 
 
