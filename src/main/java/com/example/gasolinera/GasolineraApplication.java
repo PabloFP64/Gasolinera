@@ -1,13 +1,16 @@
 package com.example.gasolinera;
 
-import org.springframework.boot.SpringApplication;
+import com.example.gasolinera.Servicio.Lanzador;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class GasolineraApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(GasolineraApplication.class, args);
+    public static void main(String[] args) throws InterruptedException{
+        //SpringApplication.run(GasolineraApplication.class, args);
+        Lanzador.lanzame();
     }
+
+
 
 }
